@@ -1,0 +1,12 @@
+// Proposed syntax; requires the future compiler.
+fn sum(limit: i64): i64 {
+  let total = 0;
+  for (let i = 0; i < limit; i = i + 1) {
+    total = total + i;
+  }
+  return total;
+}
+fn main(): i64 {
+  print(i64ToString(sum(100)));
+  return 0;
+}
